@@ -6,7 +6,7 @@ function [G, output_arg] = Gabor_wavelet(b, FOV, gamma, lambda, phi, sigma, thet
 
 if ~xor(isempty(b), isempty(sigma)) 
     
-    error('xor(isempty(b), isempty(sigma))');
+    error('~xor(isempty(b), isempty(sigma))');
     
 elseif isempty(b)
     
